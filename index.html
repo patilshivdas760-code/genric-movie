@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 mt-4">
+                <a href="index.html" class="logo">
+                    <img src="./assets/imges/Netflix_logo.svg" alt="logo" height="50px">
+                </a>
+            </div>
+            <div class="col-6 mt-4 d-flex justify-content-end align-items-start">
+                <button class="btn btn-sm nfxBtn btn-danger" id="nfxBtn">Add Movie</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row" id="movieContainer">
+            <div class="card">
+                <div class="card-body">
+                    <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="card movieCard text-white">
+                            <div class="card-header p-0">
+                                <div class="row">
+                                    <div class="col-10">
+                                        <h5>hiiiiiiiiii</h5>
+                                    </div>
+                                    <div class="col-2">
+                                        <h6><span class="badge badge-success">9</span></h6>
+                                    </div>
+                                </div>
+                                <div class="card-body p-0">
+                                    <figure>
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm-8WXEbh00fGmfvxVJWvsfWmCoSTxy
+                                bwexEv11Cyhz11VeM7PODGqQ5_ssp_O0rHH__Zkp5G_Ib65QJImlJzDEGNH4HH9qk_vvEHDNpI8jA&s=10"
+                                            height="350px" width="350px" alt="">
+                                        <figcaption>
+                                            <h5>name</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt maiores
+                                                placeat
+                                                ab,
+                                                voluptatum neque iure. Officia, veniam obcaecati asperiores a, rem,
+                                                consequuntur
+                                                autem officiis sint atque reiciendis quas quaerat distinctio!</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between p-0">
+                                    <button class="btn btn-sm btn-success">Edit</button>
+                                    <button class="btn btn-sm btn-danger">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="backDrop closeBtns" id="backDrop">
+
+    </div>
+
+    <div class="movieModel" id="movieModel">
+        <form id="movieForm">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between">
+                    <h5>Enter Movie Details</h5>
+                    <i class="fa-solid fa-xmark fa-2x closeBtns" role="button"></i>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <label for="movieName">Enter movieName</label>
+                        <input type="text" class="form-control" id="movieName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="movieImg">Enter movieImg</label>
+                        <input type="text" class="form-control" id="movieImg">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="movieDesc">Enter movieDesc</label>
+                        <input type="text" class="form-control" id="movieDesc">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="movieRating">Enter movieRating</label>
+                        <select class="form-control" id="movieRating">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <button type="submit" class="btn btn-sm btn-dark" id="submitBtn">Add Movie</button>
+                    <button type="button" class="btn btn-sm btn-success d-none" id="updateBtn">update Movie</button>
+                    <button type="button" class="btn btn-sm btn-danger closeBtns">close</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="spinner d-none" id="spinner">
+        <div class="spinner-border text-light" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./assets/js/app.js">
+
+</script>
+
+</html>

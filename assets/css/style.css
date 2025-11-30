@@ -1,0 +1,173 @@
+body {
+
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+}
+
+body::after {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.9000) 0.000%,
+            rgba(0, 0, 0, 0.8965) 8.500%,
+            rgba(0, 0, 0, 0.8861) 17.00%,
+            rgba(0, 0, 0, 0.8688) 25.50%,
+            rgba(0, 0, 0, 0.8444) 34.00%,
+            rgba(0, 0, 0, 0.8132) 42.50%,
+            rgba(0, 0, 0, 0.7750) 51.00%,
+            rgba(0, 0, 0, 0.7368) 59.50%,
+            rgba(0, 0, 0, 0.7056) 68.00%,
+            rgba(0, 0, 0, 0.6813) 76.50%,
+            rgba(0, 0, 0, 0.6339) 85.00%,
+            rgba(0, 0, 0, 0.6135) 93.50%,
+            rgba(0, 0, 0, 0.6000) 100%),
+        url(../imges/background\ image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+nfxBtn {
+
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.logo {
+
+    display: inline-block;
+    height: 100px;
+    width: 150px;
+}
+
+.logo:hover,
+.nfxBtn:hover {
+
+    transform: scale(0.98);
+    color: var(--color-white);
+}
+
+.movieModel {
+
+    position: fixed;
+    top: 15%;
+    width: 60%;
+    left: 20%;
+    display: none;
+    animation: SlideDown .4s ease-in-out;
+}
+
+.backDrop {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    cursor: pointer;
+    animation: fadeIn .4s ease-in-out;
+}
+
+.backDrop.active,
+.movieModel.active {
+
+    display: block;
+}
+
+.movieCard {
+
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.movieCard h5 {
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 40px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.movieCard figure {
+
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.movieCard img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movieCard figcaption {
+
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    padding: 10px;
+    height: 70%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, .4);
+    transform: translateY(100%);
+    transition: all .4s ease-in-out;
+}
+
+.movieCard:hover figcaption {
+
+    transform: translateY(0);
+}
+
+@keyframes SlideDown {
+
+    0% {
+        transform: translateY(-50px);
+    }
+
+    100% {
+
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: 1;
+    }
+}
+
+.spinner {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .6);
+}
