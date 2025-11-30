@@ -30,11 +30,9 @@
 
     <div class="container-fluid">
         <div class="row" id="movieContainer">
-            <div class="card">
-                <div class="card-body">
                     <div class="col-md-3 col-sm-6 mb-4">
                         <div class="card movieCard text-white">
-                            <div class="card-header p-0">
+                            <div class="card-header">
                                 <div class="row">
                                     <div class="col-10">
                                         <h5>hiiiiiiiiii</h5>
@@ -43,31 +41,30 @@
                                         <h6><span class="badge badge-success">9</span></h6>
                                     </div>
                                 </div>
-                                <div class="card-body p-0">
-                                    <figure>
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm-8WXEbh00fGmfvxVJWvsfWmCoSTxy
-                                bwexEv11Cyhz11VeM7PODGqQ5_ssp_O0rHH__Zkp5G_Ib65QJImlJzDEGNH4HH9qk_vvEHDNpI8jA&s=10"
-                                            height="350px" width="350px" alt="">
-                                        <figcaption>
-                                            <h5>name</h5>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt maiores
-                                                placeat
-                                                ab,
-                                                voluptatum neque iure. Officia, veniam obcaecati asperiores a, rem,
-                                                consequuntur
-                                                autem officiis sint atque reiciendis quas quaerat distinctio!</p>
-                                        </figcaption>
-                                    </figure>
-                                </div>
-                                <div class="card-footer d-flex justify-content-between">
-                                    <button class="btn btn-sm btn-success">Edit</button>
-                                    <button class="btn btn-sm btn-danger">Remove</button>
-                                </div>
                             </div>
+                            <div class="card-body">
+                                <figure>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm-8WXEbh00fGmfvxVJWvsfWmCoSTxy
+                                bwexEv11Cyhz11VeM7PODGqQ5_ssp_O0rHH__Zkp5G_Ib65QJImlJzDEGNH4HH9qk_vvEHDNpI8jA&s=10"
+                                        height="350px" width="350px" alt="">
+                                    <figcaption>
+                                        <h5>name</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt maiores
+                                            placeat
+                                            ab,
+                                            voluptatum neque iure. Officia, veniam obcaecati asperiores a, rem,
+                                            consequuntur
+                                            autem officiis sint atque reiciendis quas quaerat distinctio!</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between .p.0">
+                                <button class="btn btn-sm btn-success">Edit</button>
+                                <button class="btn btn-sm btn-danger">Remove</button>
+                            </div>
+
                         </div>
-                    </div>
-                </div>
-            </div>
+                   </div>
         </div>
     </div>
 
@@ -109,7 +106,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="card-footer d-flex justify-content-between">
+                <div class="card-footer d-flex justify-content-between  footerBtn">
                     <button type="submit" class="btn btn-sm btn-dark" id="submitBtn">Add Movie</button>
                     <button type="button" class="btn btn-sm btn-success d-none" id="updateBtn">update Movie</button>
                     <button type="button" class="btn btn-sm btn-danger closeBtns">close</button>
